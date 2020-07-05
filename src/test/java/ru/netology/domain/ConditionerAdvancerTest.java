@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ConditionerAdvancerTest {
 
     @Test
-    void shouldCreateConditionerAdvancer() {
+    void shouldCreateConditioner() {
         Conditioner conditioner = new Conditioner();
     }
 
@@ -23,6 +23,9 @@ class ConditionerAdvancerTest {
     @Test
     void shouldChangeFields() {
         Conditioner conditioner = new Conditioner();
+        conditioner.setMaxTemperature(30);
+        conditioner.setMinTemperature(0);
+
         assertEquals(0, conditioner.getCurrentTemperature());
         conditioner.setCurrentTemperature(20);
         assertEquals(20, conditioner.getCurrentTemperature());
