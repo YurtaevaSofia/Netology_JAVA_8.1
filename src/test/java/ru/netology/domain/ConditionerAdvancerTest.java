@@ -8,12 +8,12 @@ class ConditionerAdvancerTest {
 
     @Test
     void shouldCreateConditionerAdvancer() {
-        ConditionerAdvancer conditioner = new ConditionerAdvancer();
+        Conditioner conditioner = new Conditioner();
     }
 
     @Test
     void shouldGetAndSet() {
-        ConditionerAdvancer conditioner = new ConditionerAdvancer();
+        Conditioner conditioner = new Conditioner();
         String expectedName = "Кондей";
         assertNull(conditioner.getName());
         conditioner.setName(expectedName);
@@ -22,7 +22,7 @@ class ConditionerAdvancerTest {
 
     @Test
     void shouldChangeFields() {
-        ConditionerAdvancer conditioner = new ConditionerAdvancer();
+        Conditioner conditioner = new Conditioner();
         assertEquals(0, conditioner.getCurrentTemperature());
         conditioner.setCurrentTemperature(20);
         assertEquals(20, conditioner.getCurrentTemperature());
