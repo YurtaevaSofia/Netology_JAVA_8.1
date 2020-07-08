@@ -5,11 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ConditionerTest {
-
-    @Test
-    void shouldCreateConditioner() {
-        Conditioner conditioner = new Conditioner();
-    }
+    
 
     @Test
     void shouldGetAndSet() {
